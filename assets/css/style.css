@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: rgb(22, 25, 27);
+    color: whitesmoke;
+    padding: 1% 0% 1% 0%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer>a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0% 5% 0% 5%;
+}
+
+main {
+    background-image: url("../img/back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3%;
+}
+
+/* Main */
+#mainBack {
+    background-color: rgba(26, 26, 26, 0.800);
+    width: 80%;
+    margin: auto;
+}
+
+#headBox {
+    padding: 4%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#headBox>img {
+    flex-basis: 10%;
+    margin: auto;
+    width: 10%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    box-shadow: rgba(255, 255, 255, 0.80) 0px 0px 15px;
+
+    animation-duration: 5000ms;
+    animation-name: myPic;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#headBox>p {
+    flex-basis: 90%;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+h2 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+#mainBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+
+.linkBox {
+    margin: auto;
+    flex-basis: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.infoProjectBox {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    color: whitesmoke;
+    border: 1px solid rgba(245, 245, 245, 0.250);
+    padding: 5%;
+    margin-bottom: 2%;
+}
+
+.infoProjectBox>h3 {
+    flex-basis: 50%;
+    text-decoration: underline;
+}
+
+.infoProjectBox>img {
+    flex-basis: 50%;
+    width: 10%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    border-radius: 5%;
+}
+
+.infoProjectBox>hr {
+    flex-basis: 100%;
+    color: rgba(245, 245, 245, 0.250);
+}
+
+.infoProjectBox>p {
+    flex-basis: 100%;
+    font-weight: lighter;
+}
+
+.infoProjectBox>a {
+    flex-basis: 30%;
+    background-color: rgb(35, 35, 235);
+    border: none;
+    border-radius: 5%;
+    margin: auto;
+    padding: 3%;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.infoProjectBox>a:hover,
+.infoProjectBox>a:active {
+    background-color: rgb(65, 65, 233);
+    box-shadow: rgba(255, 255, 255, 0.80) 0px 0px 15px;
+}
+
+#progress {
+    flex-basis: 100%;
+}
+
+#lineBetweenBox {
+    border-left: 1px solid whitesmoke;
+}
+
+/* Animations */
+#mainContent {
+    opacity: 25%;
+}
+
+#lineMain {
+    opacity: 100%;
+}
+
+@keyframes myPic {
+    from {
+        box-shadow: rgba(255, 255, 255, 0.80) 0px 0px 15px;
+    }
+
+    to {
+        box-shadow: rgba(236, 214, 13, 0.8) 0px 0px 15px;
+    }
+}
+
+#lineTitle {
+    animation-duration: 2500ms;
+    animation-name: lineTitle;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes lineTitle {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 10%;
+        box-shadow: rgba(255, 255, 255, 0.80) 0px 0px 15px;
+    }
+}
+
+/* Medias Queries */
+/* Tablettes & mobile */
+@media (max-width: 1023px) {
+    #mainBack {
+        width: 100%;
+    }
+
+    #headBox>p {
+        flex-basis: 100%;
+    }
+
+    #headBox>img {
+        flex-basis: 50%;
+        margin-bottom: 5%;
+    }
+
+    .linkBox {
+        flex-basis: 100%;
+    }
+
+    #lineBetweenBox {
+        border-left: none;
+    }
+
+    .infoProjectBox>h3 {
+        flex-basis: 100%;
+    }
+
+    .infoProjectBox>img {
+        flex-basis: 100%;
+    }
+
+    .infoProjectBox>a {
+        flex-basis: 50%;
+    }
+
+    footer {
+        padding: 4% 0% 4% 0%;
+    }
+}
