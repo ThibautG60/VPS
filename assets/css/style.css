@@ -11,6 +11,13 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
 footer>a {
     color: whitesmoke;
     text-decoration: none;
@@ -220,6 +227,11 @@ h2 {
 
     .infoProjectBox>a {
         flex-basis: 50%;
+    }
+
+    footer>a {
+        margin: 2% auto 2% auto;
+        flex-basis: 100%;
     }
 
     footer {
