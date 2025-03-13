@@ -1,0 +1,205 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    background-image: url("../../img/triphouse/Polynesie-1680x720.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.menutop {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+}
+
+.emenutop {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin: auto;
+    color: white;
+}
+
+.emenutopm {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.menutopflex{
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    width: 25vw;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+    text-align: center;
+}
+
+.barnav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#imgmenufoottop {
+    position: relative;
+    margin: auto;
+}
+
+.navcontenair {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.500);
+    padding: 1%;
+}
+
+.contbuttonmenufoottopl{
+    display:flex;
+}
+
+#buttonmenufoottop {
+    background-color: #c79261;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    text-align: center;
+    padding: 0.5em;
+    cursor: pointer;
+    width: 10%;
+}
+
+.bodyback{
+    background-image: url("../../img/triphouse/background-spiral.png");
+    background-size: cover;
+}
+
+.tahitiart{
+    padding: 7% 20% 4% 20%;
+}
+
+.gras{
+    font-weight: bold;
+}
+
+.tripcard{
+    padding: 0% 15% 0% 15%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trip{
+    margin: 0% 1% 0% 1%;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.100);
+    background-color: white;
+}
+
+.img-trip{
+    width: 100%;
+    height: auto;
+}
+
+.trip-body{
+    margin: 4% auto 5% 3%;
+}
+
+#inedit{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #c79261;
+}
+
+.separateur{
+    font-size: smaller;
+    margin: 5% 0% 5% 0%;
+    width: 30%;
+    border: 1px solid;
+    border-color: #c79261;
+}
+
+.price{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.polynesieart{
+    margin: 6% 17% 4% 17%;
+}
+
+.backfoot{
+    padding: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    background-color: #e4b1a2;
+}
+
+section{
+    color: #2a7098;
+}
+
+@media (min-width: 768px) {
+    #imgmenutop {
+        width: 10%;
+        height: auto;
+    }
+    .menutopm{
+        display:none;
+    }
+    .trip, .emenutop{
+        flex: 1;
+    }
+    .menutop{
+        width: 60%;
+    }
+    #imgmenufoottop {
+        top: 2vh;
+    }
+    #button1{
+        margin: 0% 8% 0% 10%;
+    }
+    #buttonmenufoottop {
+        flex-basis: 10%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 767px) {
+    #imgmenutop {
+        width: 25%;
+        height: auto;
+    }
+    .menutop{
+        display:none;
+    }
+    .trip, .emenutop{
+        flex-basis: 100%;
+    }
+    #imgmenufoottop {
+        bottom: 2vh;
+    }
+    .navcontenair{
+        justify-content: center;
+    }
+    .menutop{
+        width: 100%;
+    }
+    #button1{
+        flex-basis: 100%;
+    }    
+    #button2{
+        flex-basis: 100%;
+    }
+    #buttonmenufoottop {
+        flex-basis: 100%;
+    }
+}

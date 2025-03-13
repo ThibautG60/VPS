@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;500;700&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: .08rem;
+    text-transform: uppercase;
+    margin: 5% auto 5%;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+
+    color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container>div {
+    padding: 5%;
+}
+
+.container p {
+    font-size: 2rem;
+}
+
+.celsius {
+    background: #fed330;
+}
+
+.fahrenheit {
+    background-color: #20bf6a;
+}
+
+.kelvin {
+    background: #778ca3;
+}
+
+form {
+    width: 60vw;
+    margin: 5% auto auto auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Medias Queries */
+/* Tablettes & mobile */
+@media (max-width: 1023px) {
+    .container {
+        width: 90vw;
+    }
+
+    .container>div {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+}

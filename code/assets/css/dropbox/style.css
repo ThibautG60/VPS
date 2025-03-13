@@ -1,0 +1,422 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    padding: auto 13% auto 13%;
+    background-color: rgb(13, 47, 129);
+
+    z-index: 7;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navLogoBox {
+    flex-basis: 13%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 60px;
+    fill: rgb(255, 231, 170);
+    margin: 1%;
+}
+
+#iconBurger {
+    display: none;
+    fill: rgb(255, 231, 170);
+}
+
+#navLogoBox>p {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-right: 3%;
+}
+
+#navCenterBox {
+    flex-basis: 30%;
+    font-size: x-large;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#navRightBox {
+    flex-basis: 30%;
+    font-size: x-large;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/* MAIN */
+.blueHead,
+.blueBody {
+    background-color: rgb(13, 47, 129);
+}
+
+.head-box {
+    width: 40%;
+    margin-left: 15%;
+    padding: 10% 0% 10% 0%;
+    font-size: xx-large;
+}
+
+#arrow {
+    display: block;
+    position: relative;
+    width: 5%;
+    fill: rgb(255, 231, 170);
+    animation-duration: 1s;
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes arrow {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 50px;
+    }
+}
+
+.yellowBody {
+    background-color: rgb(255, 231, 170);
+}
+
+.yellow-body-box {
+    margin-left: 15%;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+}
+
+.yellow-body-box>img {
+    position: relative;
+    bottom: 10vh;
+    width: 35vw;
+    object-fit: cover;
+    flex: 2;
+}
+
+.yellow-body-text {
+    margin: auto 0% auto 15%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: baseline;
+    font-size: x-large;
+}
+
+.blue-body-box {
+    width: 40%;
+    margin-left: 14%;
+    padding: 10% 0% 10% 0%;
+}
+
+.blue-body-box>h2 {
+    font-size: xx-large;
+    padding-left: 3%;
+}
+
+.border>h3 {
+    font-size: x-large;
+    width: 60%;
+}
+
+.border {
+    padding-left: 3%;
+}
+
+.border>p {
+    width: 50%;
+}
+
+.border:hover {
+    border-left: 2px solid rgb(230, 230, 230);
+}
+
+/* FOOTER */
+.blackfooter {
+    background-color: black;
+    color: rgb(197, 197, 197);
+}
+
+.whiteFooter {
+    margin-left: 15%;
+}
+
+.white-footer-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.foot-item-box {
+    flex-basis: 30%;
+    margin: 0% 3% 3% 0%;
+}
+
+.foot-item-box>p {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.footer-box {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.foot-button {
+    padding: 3% 6% 3% 6%;
+    color: white;
+    border: none;
+    font-weight: bold;
+    background-color: #0d6efd;
+}
+
+.foot-button:hover {
+    background-color: #0dcaf0;
+}
+
+.foot-item {
+    flex-basis: 20%;
+    margin: 5% 1% 5% 1%;
+}
+
+.yellow-text {
+    color: rgb(255, 231, 170);
+}
+
+.blue-text {
+    color: rgb(13, 47, 129);
+}
+
+.white-text {
+    color: rgb(230, 230, 230);
+}
+
+/* Medias Queries */
+/* Mobile */
+@media (max-width: 767px) {
+
+    /*HEADER*/
+    #navLogoBox {
+        margin: auto;
+        width: 100%;
+    }
+
+    #navCenterBox,
+    #navRightBox {
+        display: none;
+    }
+
+    #iconBurger {
+        display: block;
+        width: 10%;
+    }
+
+    /*MAIN*/
+    .head-box {
+        width: 90%;
+        margin: auto;
+        padding: 30% 2% 13% 2%;
+        font-size: medium;
+    }
+
+    #arrow {
+        display: none;
+    }
+
+    .yellow-body-box {
+        width: 90%;
+        margin: auto;
+        padding: 0% 2% 0% 2%;
+        flex-direction: column;
+    }
+
+    .yellow-body-text {
+        margin: auto;
+        width: 90%;
+        font-size: medium;
+    }
+
+    .yellow-body-box>img {
+        margin: auto;
+        bottom: 5vh;
+        width: 80vw;
+        object-fit: cover;
+    }
+
+    .blue-body-box {
+        width: 90%;
+        margin: auto;
+        padding: 10% 0% 10% 0%;
+    }
+
+    .border {
+        margin-bottom: 5%;
+    }
+
+    .border>h3 {
+        width: 90%;
+        margin: auto auto 2% auto;
+    }
+
+    .border>p {
+        width: 90%;
+        margin: auto;
+    }
+
+    /*FOOTER*/
+    .whiteFooter {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    .white-footer-box {
+        flex-direction: column;
+    }
+
+    .foot-item-box {
+        flex-basis: 100%;
+    }
+
+    .foot-item-box>p {
+        font-size: medium;
+    }
+
+    .footer-box {
+        width: 90%;
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+/* Tablette */
+@media (min-width: 768px) and (max-width: 1025px) {
+
+    /*HEADER*/
+    #navLogoBox {
+        margin: auto;
+        width: 100%;
+    }
+
+    #navCenterBox,
+    #navRightBox {
+        display: none;
+    }
+
+    #iconBurger {
+        display: block;
+        width: 7%;
+    }
+
+    /*MAIN*/
+    .head-box {
+        width: 90%;
+        margin: auto;
+        padding: 13% 2% 13% 2%;
+        font-size: medium;
+    }
+
+    #arrow {
+        display: none;
+    }
+
+    .yellow-body-box {
+        width: 90%;
+        margin: auto;
+        padding: 0% 2% 0% 2%;
+        flex-direction: column;
+    }
+
+    .yellow-body-text {
+        margin: auto;
+        width: 90%;
+        font-size: medium;
+    }
+
+    .yellow-body-box>img {
+        margin: auto;
+        bottom: 5vh;
+        width: 80vw;
+        object-fit: cover;
+    }
+
+    .blue-body-box {
+        width: 90%;
+        margin: auto;
+        padding: 5% 0% 5% 0%;
+    }
+
+    .border {
+        margin-bottom: 5%;
+    }
+
+    .border>h3 {
+        width: 90%;
+        margin: auto auto 2% auto;
+    }
+
+    .border>p {
+        width: 90%;
+        margin: auto;
+    }
+
+    /*FOOTER*/
+    .whiteFooter {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    .white-footer-box {
+        flex-direction: column;
+    }
+
+    .foot-item-box {
+        flex-basis: 100%;
+    }
+
+    .foot-item-box>p {
+        font-size: medium;
+    }
+
+    .footer-box {
+        width: 90%;
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}

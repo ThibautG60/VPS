@@ -1,152 +1,34 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php 
+/* FICHIER DE REDIRECTION BASIQUE */
+require_once 'utils/php_errors.php'; // On charge le fihcier PHP pour afficher les erreurs PHP
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thibaut GERARD - Projets</title>
+//-- On redirige vers le bon controller --
+if($_SERVER['REDIRECT_URL'] == "/"){ // Si il n'y a pas de catégories dans l'URL, on charge l'acceuil
+    include_once 'views/acceuil.php';
+}
+else{ // Sinon on charge le controller adapté à la page
+    $link = 'controllers/controller_'.$_SERVER['REDIRECT_URL'].'.php';
 
-    <link rel="shortcut icon" href="assets/img/iconSite.png" />
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <script defer src="assets/js/base.js"></script>
-</head>
-
-<body>
-    <header>
-        <div>
-            <h1>Thibaut GERARD</h1>
-            <hr id="lineTitle">
-        </div>
-    </header>
-    <main>
-        <div id="mainBack">
-            <div id="headBox">
-                <img src="assets/img/me.jpg" alt="Tu veux ma photo ? bah elle est là normalement">
-                <p>Bonjour et bienvenue sur la présentation de mes humbles projets.<br>
-                    Je m'appelle Thibaut, j'ai 29 ans et je suis passionné par le développement informatique depuis mes
-                    années
-                    collèges, et depuis, je n'ai cessé d'explorer ce domaine en constante évolution.<br>
-                    Aujourd'hui, j'ai décidé de transformer cette passion en véritable métier.<br>
-                    Je me spécialise dans le développement web et logiciel, et je mets mes compétences au service de
-                    projets
-                    divers allant de la création
-                    de sites internet à des solutions logicielles plus complexes. <br>
-                    Mon objectif est de concevoir des solutions techniques innovantes et efficaces, adaptées aux besoins
-                    spécifiques de chaque personnes.<br>
-                    Vous trouverez ci-dessous mes projets réalisés, qui je pense, témoignent de mon engagement à offrir
-                    des produits de qualité et à relever de nouveaux défis.
-                </p>
-            </div>
-            <hr id="lineMain">
-            <div id="mainContent">
-                <h2>Mes projets</h2>
-                <div id="mainBox">
-                    <div class="linkBox">
-                        <div class="infoProjectBox">
-                            <h3>Pet assist'</h3>
-                            <img src="assets/img/petAssist.jpeg" alt="Apercu du projet petAssist">
-                            <hr>
-                            <p class="textProjectBox">Ce site a pour objectif de faciliter la mise en relation des
-                                propriétaires d'animaux et des personnes ayant retrouvé un animal perdu.<br>
-                                Que ce soit pour signaler un animal errant ou pour retrouver un compagnon disparu, la
-                                plateforme permet de publier des annonces rapidement et de manière intuitive.<br>
-                                L’idée est de créer une communauté engagée où chacun peut contribuer à retrouver des
-                                animaux perdus, et ce, de façon simple et efficace.</p>
-                            <p>Dernière mise à jour: 4 Mars 2025</p>
-                            <a href="Projets/PetAssist/">Je découvre</a>
-                            <p>En cours de developpement:</p>
-                            <progress id="progress" value="90" max="100"> </progress>
-                        </div>
-
-                        <div class="infoProjectBox">
-                            <h3>MaTension</h3>
-                            <img src="assets/img/heart.jpeg" alt="Apercu du projet Ma Tension">
-                            <hr>
-                            <p class="textProjectBox">MaTension est un projet très personnel, il me fallait un outil
-                                pour enregistrer mes relevés de tension cardiaque.<br>
-                                Sans même chercher si cela existait déjà j'ai commencé à créer mon propre outil. De fil
-                                en aiguille j'y ajoute régulièrement des fonctionnalités.</p>
-                            <a href="Projets/heart/">Je découvre</a>
-                            <p>En cours de developpement:</p>
-                            <progress id="progress" value="70" max="100"> </progress>
-                        </div>
-
-                        <div class="infoProjectBox">
-                            <h3>Les Vieilles Charrettes [WORDPRESS]</h3>
-                            <img src="assets/img/vieillesCharrettes.jpeg"
-                                alt="Apercu du projet wordpress Les Vieilles Charrettes">
-                            <hr>
-                            <p class="textProjectBox">Les Vieilles Charrettes est un projet réalisé dans le cadre d'un
-                                exercice scolaire, où l'objectif était de créer un site WordPress avec un logo et deux
-                                couleurs.<br>
-                                Ce projet se concentre sur la simplicité du design, offrant une présentation épurée et
-                                un style visuel minimaliste, tout en respectant les contraintes imposées.</p>
-                            <a href="Projets/wordpress/">Je découvre</a>
-                            <p>En cours de developpement:</p>
-                            <progress id="progress" value="40" max="100"> </progress>
-                        </div>
-                    </div>
-                    <div class="linkBox" id="lineBetweenBox">
-                        <div class="infoProjectBox">
-                            <h3>Les maisons du voyage</h3>
-                            <img src="assets/img/tripHouse.jpeg" alt="Apercu du projet maisons du voyage">
-                            <hr>
-                            <p class="textProjectBox">Ce projet présente un design conceptuel d’un site destiné à aider
-                                les utilisateurs à choisir leur maison de vacances idéale.<br>
-                                Il n'est pas destiné à être développé en site fonctionnel, mais plutôt à offrir une
-                                expérience visuelle soignée, avec une interface claire et attractive.<br>
-                                L'objectif est de montrer comment un tel site pourrait être structuré et conçu pour
-                                faciliter la recherche de locations de vacances.</p>
-                            <a href="Projets/TripHouse/index.html">Je découvre</a>
-                        </div>
-                        <div class="infoProjectBox">
-                            <h3>Ancien design du site DropBox</h3>
-                            <img src="assets/img/Animations.jpeg" alt="Apercu du projet DropBox">
-                            <hr>
-                            <p class="textProjectBox">Dropbox est un projet réalisé dans le cadre d'un exercice
-                                scolaire.<br>
-                                L'objectif était de reproduire le plus fidèlement possible le design du site
-                                internet.<br>
-                                Le design repose sur l'utilisation de quelques screens de l'ancien site DropBox ainsi
-                                que l'utilisation de la WayBack Machine.</p>
-                            <a href="Projets/Animations/index.html">Je découvre</a>
-                        </div>
-                        <div class="infoProjectBox">
-                            <h3>Planning</h3>
-                            <img src="assets/img/calendrier.jpeg" alt="Apercu du projet de calendrier">
-                            <hr>
-                            <p class="textProjectBox">Ce petit projet est un exercice scolaire, où l'objectif était de
-                                créer un planning pour un site fictif appelé ' La
-                                Manu Ecology '.<br>
-                                Le planning devait s'adapter aux mois et années selectionnées. Lorsqu'un énènement est
-                                prévu au jour selectionné, l'utilisateur peut cliquer sur la date pour avoir plus
-                                d'informations.<br>
-                                L'essentiel des évènements se trouvent en 2024.</p>
-                            <a href="Projets/Planning/index.php">Je découvre</a>
-                        </div>
-                        <div class="infoProjectBox">
-                            <h3>Convertisseur degrés</h3>
-                            <img src="assets/img/convert.jpeg" alt="Apercu du projet de convertisseur">
-                            <hr>
-                            <p class="textProjectBox">Ce site permet de convertir facilement toutes les unités de
-                                température (Celsius, Fahrenheit, Kelvin, etc.).<br>
-                                Avec une interface simple et intuitive, il offre aux utilisateurs une solution
-                                rapide et
-                                efficace pour effectuer des conversions de degrés, tout en étant entièrement
-                                fonctionnel.</p>
-                            <a href="Projets/Convert/index.html">Je découvre</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <a href="mailto:thibaut.lucien@hotmail.fr">Me contacter</a>
-        <a href="assets/file/CVTG2025.pdf" download>Voir mon CV complet</a>
-        <a href="https://github.com/ThibautG60" download>Mon GitHub</a>
-    </footer>
-</body>
-
-</html>
+    switch ($_SERVER['REDIRECT_URL']){ // Si la page demandé fait parti de cette liste, on affiche la page (Pas besoin de controller étant donné qu'il n'y a aucun calcul à faire)
+        case '/Voyage';
+            include_once 'views/triphouse.html';
+            break;
+        case '/Dropbox';
+            include_once 'views/dropbox.html'; 
+            break;
+        case '/Convertisseur';
+            include_once 'views/convert.html'; 
+            break;
+        case '/Calendrier';
+            include_once 'views/calendar.php'; 
+            break;
+        default: // Sinon, on importe le controller correspondant
+            if (file_exists($link)) {
+                include_once $link; // On importe le controller correspondant
+            } else {
+                include_once 'views/acceuil.php'; 
+            }
+            break;
+    }
+}
+?>

@@ -1,0 +1,1 @@
+<?php include_once 'controllers/calendar/calendarController.php'; //- On importe le controller pour qu'il charge toutes les scripts pour le calendrier ?>
