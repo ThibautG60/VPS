@@ -1,0 +1,11 @@
+services:
+  php:
+    container_name: php-container-tg
+    image: php-apache-tg
+    build: 
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - ./code:/var/www/html/
+    ports:
+      - "80:80"
