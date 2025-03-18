@@ -54,7 +54,7 @@
                                 L’idée est de créer une communauté engagée où chacun peut contribuer à retrouver des
                                 animaux perdus, et ce, de façon simple et efficace.</p>
                             <p>Dernière mise à jour: 14 Mars 2025</p>
-                            <a href="http://192.168.1.158:70">Je découvre</a>
+                            <a href="http://51.178.31.87:70">Je découvre</a>
                             <p>En cours de developpement:</p>
                             <progress id="progress" value="90" max="100"> </progress>
                         </div>
@@ -67,8 +67,8 @@
                                 pour enregistrer mes relevés de tension cardiaque.<br>
                                 Sans même chercher si cela existait déjà j'ai commencé à créer mon propre outil. De fil
                                 en aiguille j'y ajoute régulièrement des fonctionnalités.</p>
-                            <p>Dernière mise à jour: 14 Mars 2025</p>
-                            <a href="http://192.168.1.158:90">Je découvre</a>
+                            <p>Dernière mise à jour: 18 Mars 2025</p>
+                            <a href="http://51.178.31.87:90">Je découvre</a>
                             <p>En cours de developpement:</p>
                             <progress id="progress" value="70" max="100"> </progress>
                         </div>
