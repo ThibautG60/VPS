@@ -24,18 +24,15 @@
             <div id="headBox">
                 <img src="assets/img/acceuil/me.jpg" alt="Tu veux ma photo ? bah elle est là normalement">
                 <p>Bonjour et bienvenue sur la présentation de mes humbles projets.<br>
-                    Je m'appelle Thibaut, j'ai 29 ans et je suis passionné par le développement informatique depuis mes
-                    années
-                    collèges, et depuis, je n'ai cessé d'explorer ce domaine en constante évolution.<br>
-                    Aujourd'hui, j'ai décidé de transformer cette passion en véritable métier.<br>
-                    Je me spécialise dans le développement web et logiciel, et je mets mes compétences au service de
-                    projets
-                    divers allant de la création
-                    de sites internet à des solutions logicielles plus complexes. <br>
-                    Mon objectif est de concevoir des solutions techniques innovantes et efficaces, adaptées aux besoins
-                    spécifiques de chaque personnes.<br>
-                    Vous trouverez ci-dessous mes projets réalisés, qui je pense, témoignent de mon engagement à offrir
-                    des produits de qualité et à relever de nouveaux défis.
+                    Je m'appelle Thibaut, j'ai 29 ans (Et toutes mes dents pour l'instant) et je suis passionné par le développement informatique depuis mes
+                    années collèges. <br>
+                    Et depuis, je n'ai cessé d'explorer ce domaine en constante évolution.<br>
+                    Aujourd'hui, j'ai décidé de transformer cette passion en véritable métier.<br><br>
+                    Je me spécialise dans le développement web et logiciel, et je mets mes compétences au service de projets
+                    divers allant de la création de sites 'vitrine'<br> 
+                    à des sites internet plus complexe (Base de données, pages dynamiques ...) en passant par du developpement hors sites internet. <br>
+                    Mon objectif est de concevoir des projets qui vous plaisent et de répondre à toutes vos attentes.<br>
+                    Vous trouverez ci-dessous mes projets réalisés et en cours de réalisation:
                 </p>
             </div>
             <hr id="lineMain">
@@ -49,10 +46,9 @@
                             <hr>
                             <p class="textProjectBox">Ce site a pour objectif de faciliter la mise en relation des
                                 propriétaires d'animaux et des personnes ayant retrouvé un animal perdu.<br>
-                                Que ce soit pour signaler un animal errant ou pour retrouver un compagnon disparu, la
-                                plateforme permet de publier des annonces rapidement et de manière intuitive.<br>
+                                Que ce soit pour signaler un animal errant ou pour retrouver un compagnon disparu, Pet Assist permet de publier des annonces rapidement, facilement et gratuitement.<br>
                                 L’idée est de créer une communauté engagée où chacun peut contribuer à retrouver des
-                                animaux perdus, et ce, de façon simple et efficace.</p>
+                                animaux perdus de façon simple et efficace.</p>
                             <p>Dernière mise à jour: 14 Mars 2025</p>
                             <a href="http://51.178.31.87:70">Je découvre</a>
                             <p>En cours de developpement:</p>
@@ -66,7 +62,8 @@
                             <p class="textProjectBox">MaTension est un projet très personnel, il me fallait un outil
                                 pour enregistrer mes relevés de tension cardiaque.<br>
                                 Sans même chercher si cela existait déjà j'ai commencé à créer mon propre outil. De fil
-                                en aiguille j'y ajoute régulièrement des fonctionnalités.</p>
+                                en aiguille j'y ajoute régulièrement des fonctionnalités comme par exemple, l'IMC et la fièvre. <br><br>
+                                PS: Pensez à manger des légumes parfois, ça aide pour la tension.</p>
                             <p>Dernière mise à jour: 18 Mars 2025</p>
                             <a href="http://51.178.31.87:90">Je découvre</a>
                             <p>En cours de developpement:</p>
@@ -78,10 +75,8 @@
                             <h3>Les maisons du voyage</h3>
                             <img src="assets/img/acceuil/tripHouse.jpeg" alt="Apercu du projet maisons du voyage">
                             <hr>
-                            <p class="textProjectBox">Ce projet présente un design conceptuel d’un site destiné à aider
-                                les utilisateurs à choisir leur maison de vacances idéale.<br>
-                                Il n'est pas destiné à être développé en site fonctionnel, mais plutôt à offrir une
-                                expérience visuelle soignée, avec une interface claire et attractive.<br>
+                            <p class="textProjectBox">'Les Maisons du voyage' présente un design conceptuel d’un site de voyage.<br>
+                                Il n'est pas destiné à être développé en site fonctionnel, mais plutôt à présenter un exemple de visuel soignée, avec une interface claire et attractive.<br>
                                 L'objectif est de montrer comment un tel site pourrait être structuré et conçu pour
                                 faciliter la recherche de locations de vacances.</p>
                             <a href="Voyage">Je découvre</a>
@@ -117,10 +112,8 @@
                             <hr>
                             <p class="textProjectBox">Ce site permet de convertir facilement toutes les unités de
                                 température (Celsius, Fahrenheit, Kelvin, etc.).<br>
-                                Avec une interface simple et intuitive, il offre aux utilisateurs une solution
-                                rapide et
-                                efficace pour effectuer des conversions de degrés, tout en étant entièrement
-                                fonctionnel.</p>
+                                Avec une interface simple et intuitive, il offre une solution
+                                rapide et efficace pour effectuer des conversions de degrés.</p>
                             <a href="Convertisseur">Je découvre</a>
                         </div>
                     </div>
