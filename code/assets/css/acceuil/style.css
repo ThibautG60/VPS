@@ -1,9 +1,16 @@
+html,
 body {
+    height: 100%;
     margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
 }
 
 header,
 footer {
+    width: 100%;
     background-color: rgb(22, 25, 27);
     color: whitesmoke;
     padding: 1% 0% 1% 0%;
@@ -31,6 +38,7 @@ main {
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 3%;
+    flex: 1;
 }
 
 /* Main */

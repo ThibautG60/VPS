@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Présentation des projets de developpement de Thibaut GERARD, developpeur web dans l'oise">
+    <meta name="keywords" content="Thibaut,GERARD,développement,web,logiciel,site internet,projet,oise">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Thibaut GERARD">
     <title>Thibaut GERARD - Projets</title>
 
     <link rel="shortcut icon" href="assets/img/acceuil/iconSite.png" />
@@ -24,7 +28,7 @@
             <div id="headBox">
                 <img src="assets/img/acceuil/me.jpg" alt="Tu veux ma photo ? bah elle est là normalement">
                 <p>Bonjour et bienvenue sur la présentation de mes humbles projets.<br>
-                    Je m'appelle Thibaut, j'ai 29 ans (Et toutes mes dents pour l'instant) et je suis passionné par le développement informatique depuis mes
+                    Je m'appelle Thibaut, j'ai 29 ans (Et toutes mes dents pour l'instant), je viens de l'Oise (Là où il pleut) et je suis passionné par le développement informatique depuis mes
                     années collèges. <br>
                     Et depuis, je n'ai cessé d'explorer ce domaine en constante évolution.<br>
                     Aujourd'hui, j'ai décidé de transformer cette passion en véritable métier.<br><br>
@@ -49,8 +53,8 @@
                                 Que ce soit pour signaler un animal errant ou pour retrouver un compagnon disparu, Pet Assist permet de publier des annonces rapidement, facilement et gratuitement.<br>
                                 L’idée est de créer une communauté engagée où chacun peut contribuer à retrouver des
                                 animaux perdus de façon simple et efficace.</p>
-                            <p>Dernière mise à jour: 14 Mars 2025</p>
-                            <a href="http://51.178.31.87:70">Je découvre</a>
+                            <p>Dernière mise à jour: 25 Mars 2025</p>
+                            <a href="http://pet-assist.fr">Je découvre</a>
                             <p>En cours de developpement:</p>
                             <progress id="progress" value="90" max="100"> </progress>
                         </div>
@@ -64,10 +68,10 @@
                                 Sans même chercher si cela existait déjà j'ai commencé à créer mon propre outil. De fil
                                 en aiguille j'y ajoute régulièrement des fonctionnalités comme par exemple, l'IMC et la fièvre. <br><br>
                                 PS: Pensez à manger des légumes parfois, ça aide pour la tension.</p>
-                            <p>Dernière mise à jour: 18 Mars 2025</p>
-                            <a href="http://51.178.31.87:90">Je découvre</a>
+                            <p>Dernière mise à jour: 25 Mars 2025</p>
+                            <a href="http://ma-tension.fr">Je découvre</a>
                             <p>En cours de developpement:</p>
-                            <progress id="progress" value="70" max="100"> </progress>
+                            <progress id="progress" value="95" max="100"> </progress>
                         </div>
                     </div>
                     <div class="linkBox" id="lineBetweenBox">
@@ -125,6 +129,7 @@
         <a href="mailto:thibaut.lucien@hotmail.fr">Me contacter</a>
         <a href="assets/file/CVTG2025.pdf" download>Voir mon CV complet</a>
         <a href="https://github.com/ThibautG60" download>Mon GitHub</a>
+        <a href="Mentions">Mentions légales</a>
     </footer>
 </body>
 

@@ -10,6 +10,9 @@ else{ // Sinon on charge le controller adapté à la page
     $link = 'controllers/controller_'.$_SERVER['REDIRECT_URL'].'.php';
 
     switch ($_SERVER['REDIRECT_URL']){ // Si la page demandé fait parti de cette liste, on affiche la page (Pas besoin de controller étant donné qu'il n'y a aucun calcul à faire)
+        case '/Mentions';
+            include_once 'views/mentions.php'; 
+            break;
         case '/Voyage';
             include_once 'views/triphouse.html';
             break;
@@ -21,6 +24,9 @@ else{ // Sinon on charge le controller adapté à la page
             break;
         case '/Calendrier';
             include_once 'views/calendar.php'; 
+            break;
+        case '/robots.txt';
+            include_once 'robots.txt'; 
             break;
         default: // Sinon, on importe le controller correspondant
             if (file_exists($link)) {
