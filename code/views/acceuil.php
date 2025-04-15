@@ -28,8 +28,8 @@
             <div id="headBox">
                 <img src="assets/img/acceuil/me.jpg" alt="Tu veux ma photo ? bah elle est là normalement">
                 <p>Bonjour et bienvenue sur la présentation de mes humbles projets.<br>
-                    Je m'appelle Thibaut, j'ai 29 ans (Et toutes mes dents pour l'instant), je viens de l'Oise (Là où il pleut) et je suis passionné par le développement informatique depuis mes
-                    années collèges. <br>
+                    Je m'appelle <strong>Thibaut</strong>, j'ai 29 ans, je viens de l'Oise.<br>
+                    Je suis passionné par le développement informatique depuis mes années collèges.<br>
                     Et depuis, je n'ai cessé d'explorer ce domaine en constante évolution.<br>
                     Aujourd'hui, j'ai décidé de transformer cette passion en véritable métier.<br><br>
                     Je me spécialise dans le développement web et logiciel, et je mets mes compétences au service de projets
@@ -53,8 +53,8 @@
                                 Que ce soit pour signaler un animal errant ou pour retrouver un compagnon disparu, Pet Assist permet de publier des annonces rapidement, facilement et gratuitement.<br>
                                 L’idée est de créer une communauté engagée où chacun peut contribuer à retrouver des
                                 animaux perdus de façon simple et efficace.</p>
-                            <p>Dernière mise à jour: 25 Mars 2025</p>
-                            <a href="http://pet-assist.fr">Je découvre</a>
+                            <p>Dernière mise à jour: 15 Avril 2025</p>
+                            <a href="https://pet-assist.fr">Je découvre</a>
                             <p>En cours de developpement:</p>
                             <progress id="progress" value="90" max="100"> </progress>
                         </div>
@@ -69,9 +69,8 @@
                                 en aiguille j'y ajoute régulièrement des fonctionnalités comme par exemple, l'IMC et la fièvre. <br><br>
                                 PS: Pensez à manger des légumes parfois, ça aide pour la tension.</p>
                             <p>Dernière mise à jour: 7 Avril 2025</p>
-                            <a href="http://ma-tension.fr">Je découvre</a>
-                            <p>En cours de developpement: <strong>Version 1 Disponible !</strong></p>
-                            <progress id="progress" value="100" max="100"> </progress>
+                            <a href="https://ma-tension.fr">Je découvre</a>
+                            <p><strong>Version 1 Disponible !</strong></p>
                         </div>
                     </div>
                     <div class="linkBox" id="lineBetweenBox">
