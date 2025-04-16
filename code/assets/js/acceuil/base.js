@@ -20,6 +20,7 @@ window.onscroll = function () {
 
 //- Etoiles en fond
 const main = document.querySelector("main");
+const mainBack = document.getElementById("mainBack");
 
 function createStars() {
   for (let i = 0; i < 300; i++) { // Boucle avec le nombre d'étoiles
@@ -37,8 +38,9 @@ function createStars() {
     const randomY = Math.random() * main.offsetHeight;
     star.style.left = randomX + "px";
     star.style.top = randomY + "px";
+    star.style.zIndex = "auto";
 
-    main.appendChild(star);
+    main.insertBefore(star, mainBack);
   }
 }
 createStars();

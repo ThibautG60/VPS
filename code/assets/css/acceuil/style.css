@@ -16,7 +16,7 @@ footer {
     padding: 1% 0% 1% 0%;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    z-index: 3;
+    z-index: 2;
 }
 
 footer {
@@ -33,10 +33,6 @@ footer>a {
 }
 
 main {
-    /*background-image: url("../../img/acceuil/back.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
     background-color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 3%;
@@ -52,7 +48,6 @@ main {
     border-radius: 50%; 
     box-shadow: white 0px 0px 3px 2px;
     animation: twinkle 6s infinite ease-in-out;
-    z-index: auto;
 }
 
 .star_2 {
@@ -63,7 +58,6 @@ main {
     border-radius: 50%; 
     box-shadow: rgb(158, 112, 243) 0px 0px 3px 1px;
     animation: twinkle 2s infinite ease-in-out;
-    z-index: auto;
 }
 
 .star_3 {
@@ -74,7 +68,6 @@ main {
     border-radius: 50%; 
     box-shadow: rgb(230, 238, 159) 0px 0px 3px 1px;
     animation: twinkle 4s infinite ease-in-out;
-    z-index: auto;
 }
 
 .star_4 {
@@ -85,7 +78,6 @@ main {
     border-radius: 50%; 
     box-shadow: rgb(158, 42, 42) 0px 0px 3px 2px;
     animation: twinkle 6s infinite ease-in-out;
-    z-index: auto;
 }
 
 @keyframes twinkle {
@@ -97,7 +89,7 @@ main {
     background-color: rgba(26, 26, 26, 0.800);
     width: 80%;
     margin: auto;
-    z-index: 3;
+    z-index: 2;
 }
 
 #headBox {
