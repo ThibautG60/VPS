@@ -1,3 +1,18 @@
+/* Polices d'écriture */
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+/* Couleurs */
+:root {
+    --header_footer: rgb(22, 25, 27);
+    --main: rgba(26, 26, 26, 0.800);
+    --white: rgba(255, 255, 255, 0.80);
+    --svg: rgb(255, 255, 255);
+    --sun: #f8c969;
+    --button: rgb(35, 35, 235);
+    --button_a: rgb(65, 65, 233);
+    --card_project: rgba(245, 245, 245, 0.250);
+}
+/* Style */
 html,
 body {
     height: 100%;
@@ -11,11 +26,27 @@ body {
 header,
 footer {
     width: 100%;
-    background-color: rgb(22, 25, 27);
+    background-color: var(--header_footer);
     color: whitesmoke;
     padding: 1% 0% 1% 0%;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "wdth" 100,
+      "GRAD" 0,
+      "XOPQ" 96,
+      "XTRA" 468,
+      "YOPQ" 79,
+      "YTAS" 750,
+      "YTDE" -203,
+      "YTFI" 738,
+      "YTLC" 514,
+      "YTUC" 712;
+
     z-index: 2;
 }
 
@@ -34,12 +65,244 @@ footer>a {
 
 main {
     background-color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 1.2em;
+    font-style: normal;
+
     padding: 3%;
     flex: 1;
 }
 
 /* Main */
+#mainBack {
+    background-color: var(--main);
+    width: 80%;
+    margin: auto;
+    z-index: 2;
+}
+
+#headBox {
+    padding: 4%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#headBox>img {
+    flex-basis: 10%;
+    margin: auto;
+    width: 10%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    box-shadow: var(--white) 0px 0px 15px;
+
+    animation-duration: 5000ms;
+    animation-name: myPic;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#headBox>p {
+    flex-basis: 90%;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+h2 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.scroll>hr{
+    width: 20%;
+    color: var(--white);
+    box-shadow: var(--white) 0px 0px 15px;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+#skillsBox{
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill>svg{
+    width: 4em;
+    fill: var(--svg);
+}
+
+.skill>p {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 0.8em;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.skill:hover > p {
+    opacity: 1;
+}
+
+/* Cards des projets */
+#mainBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+
+.linkBox {
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.topSite{
+    box-shadow: var(--sun) 0px 0px 5px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.topSite:hover {
+    box-shadow: var(--sun) 0px 0px 15px;
+}
+
+.infoProjectBox {
+    width: 25%;
+    color: whitesmoke;
+    border: 1px solid var(--card_project);
+    padding: 2%;
+    margin-bottom: 2%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.infoProjectBox>h3 {
+    flex-basis: 50%;
+    text-decoration: underline;
+}
+
+.infoProjectBox>img {
+    flex-basis: 48%;
+    margin: 1%;
+    width: 10%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    border-radius: 5%;
+}
+
+.infoProjectBox>hr {
+    flex-basis: 100%;
+    color: rgba(245, 245, 245, 0.250);
+}
+
+.infoProjectBox>p {
+    flex-basis: 100%;
+    font-weight: lighter;
+}
+
+.infoProjectBox>a {
+    flex-basis: 30%;
+    background-color: var(--button);
+    border: none;
+    border-radius: 5%;
+    margin: auto;
+    padding: 3%;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.infoProjectBox>a:hover,
+.infoProjectBox>a:active {
+    background-color: var(--button_a);
+    box-shadow: rgba(255, 255, 255, 0.80) 0px 0px 15px;
+}
+
+#progress {
+    flex-basis: 100%;
+}
+
+/* Animations */
+@keyframes myPic {
+    from {
+        box-shadow: var(--white) 0px 0px 15px;
+    }
+
+    to {
+        box-shadow: var(--sun) 0px 0px 15px;
+    }
+}
+
+#lineTitle {
+    animation-duration: 2500ms;
+    animation-name: lineTitle;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes lineTitle {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 10%;
+        box-shadow: var(--white) 0px 0px 15px;
+    }
+}
+
+.scroll>svg{
+    position: relative;
+    width: 2em;
+    fill: var(--white);
+    
+    animation-duration: 5000ms;
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes arrow {
+    from {
+        left: 20%;
+        rotate: -45deg;
+    }
+
+    to {
+        left: 80%;
+        rotate: 45deg;
+    }
+}
+
+/* Etoiles */
 .star_1 {
     position: absolute;
     width: 2px;
@@ -85,165 +348,6 @@ main {
     50% { opacity: 1; }
 }
 
-#mainBack {
-    background-color: rgba(26, 26, 26, 0.800);
-    width: 80%;
-    margin: auto;
-    z-index: 2;
-}
-
-#headBox {
-    padding: 4%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#headBox>img {
-    flex-basis: 10%;
-    margin: auto;
-    width: 10%;
-    object-fit: cover;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    box-shadow: rgba(255, 255, 255, 0.80) 0px 0px 15px;
-
-    animation-duration: 5000ms;
-    animation-name: myPic;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#headBox>p {
-    flex-basis: 90%;
-    font-style: italic;
-    color: whitesmoke;
-}
-
-h2 {
-    text-align: center;
-    color: whitesmoke;
-}
-
-#mainBox {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: auto;
-}
-
-.linkBox {
-    margin: auto;
-    flex-basis: 49%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.infoProjectBox {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    color: whitesmoke;
-    border: 1px solid rgba(245, 245, 245, 0.250);
-    padding: 5%;
-    margin-bottom: 2%;
-}
-
-.infoProjectBox>h3 {
-    flex-basis: 50%;
-    text-decoration: underline;
-}
-
-.infoProjectBox>img {
-    flex-basis: 50%;
-    width: 10%;
-    object-fit: cover;
-    aspect-ratio: 16 / 9;
-    border-radius: 5%;
-}
-
-.infoProjectBox>hr {
-    flex-basis: 100%;
-    color: rgba(245, 245, 245, 0.250);
-}
-
-.infoProjectBox>p {
-    flex-basis: 100%;
-    font-weight: lighter;
-}
-
-.infoProjectBox>a {
-    flex-basis: 30%;
-    background-color: rgb(35, 35, 235);
-    border: none;
-    border-radius: 5%;
-    margin: auto;
-    padding: 3%;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: whitesmoke;
-}
-
-.infoProjectBox>a:hover,
-.infoProjectBox>a:active {
-    background-color: rgb(65, 65, 233);
-    box-shadow: rgba(255, 255, 255, 0.80) 0px 0px 15px;
-}
-
-#progress {
-    flex-basis: 100%;
-}
-
-#lineBetweenBox {
-    border-left: 1px solid whitesmoke;
-}
-
-/* Animations */
-#mainContent {
-    opacity: 25%;
-}
-
-#lineMain {
-    opacity: 100%;
-}
-
-@keyframes myPic {
-    from {
-        box-shadow: rgba(255, 255, 255, 0.80) 0px 0px 15px;
-    }
-
-    to {
-        box-shadow: rgba(236, 214, 13, 0.8) 0px 0px 15px;
-    }
-}
-
-#lineTitle {
-    animation-duration: 2500ms;
-    animation-name: lineTitle;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-}
-
-@keyframes lineTitle {
-    from {
-        width: 100%;
-    }
-
-    to {
-        width: 10%;
-        box-shadow: rgba(255, 255, 255, 0.80) 0px 0px 15px;
-    }
-}
 
 /* Medias Queries */
 /* Tablettes & mobile */
@@ -252,7 +356,7 @@ h2 {
         width: 100%;
     }
 
-    #headBox>p {
+    #headBox>p, .linkBox {
         flex-basis: 100%;
     }
 
@@ -261,19 +365,16 @@ h2 {
         margin-bottom: 5%;
     }
 
-    .linkBox {
-        flex-basis: 100%;
-    }
-
     #lineBetweenBox {
         border-left: none;
     }
 
-    .infoProjectBox>h3 {
-        flex-basis: 100%;
+    .infoProjectBox {
+        width: 80%;
+        margin: 2% auto 2% auto;
     }
 
-    .infoProjectBox>img {
+    .infoProjectBox>h3, .infoProjectBox>img{
         flex-basis: 100%;
     }
 

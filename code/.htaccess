@@ -1,7 +1,14 @@
 RewriteEngine On
+
+# Autoriser les fichiers statiques (images, CSS, JS)
+# L : Fin de règle | - : On change rien, pas de redirection
 RewriteRule ^assets/ - [L]
+
+# Redirection de toutes les routes vers ce fichier
+# ^(.*)$ : Prend toutes les URL | index.php : Redirige tous les chemins vers ce fichier | QSA : Conserve les paramètres
 RewriteRule ^(.*)$ index.php [L,QSA]
-RewriteCond %{SERVER_PORT} 60
-RewriteRule ^(.*)$ https://thibaut-gerard.fr/$1 [R,L]
-RewriteCond %{ENV:HTTPS} !on
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Redirection HTTP vers HTTPS
+# R=301 : Redirection permanante
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
