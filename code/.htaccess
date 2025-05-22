@@ -1,5 +1,10 @@
 RewriteEngine On
 
+# Ne pas rediriger si le fichier existe
+RewriteCond %{REQUEST_URI} \.xml$ [NC]
+RewriteRule ^ - [L]
+AddType application/xml .xml
+
 # Autoriser les fichiers statiques (images, CSS, JS)
 # L : Fin de règle | - : On change rien, pas de redirection
 RewriteRule ^assets/ - [L]

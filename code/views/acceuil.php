@@ -8,7 +8,7 @@
     <meta name="keywords" content="thibaut gerard,developpement,developpeur,web,logiciel,site internet,projet,oise">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Thibaut GERARD">
-    <title>Thibaut GERARD - Projets</title>
+    <title>Mon univers créatif : projets, compétences et présentation</title>
 
     <link rel="shortcut icon" href="assets/img/acceuil/iconSite.png" />
     <link rel="stylesheet" href="assets/css/acceuil/style.css">
@@ -19,7 +19,7 @@
 <body>
     <header>
         <div>
-            <h1>Thibaut GERARD</h1>
+            <h1>Explorez mes projets et apprenez à me connaître</h1>
             <hr id="lineTitle">
         </div>
     </header>
@@ -97,10 +97,10 @@
                                 Que ce soit pour signaler un animal errant ou pour retrouver un compagnon disparu, Pet Assist permet de publier des annonces rapidement, facilement et gratuitement.<br>
                                 L’idée est de créer une communauté engagée où chacun peut contribuer à retrouver des
                                 animaux perdus de façon simple et efficace.</p>
-                            <p>Dernière mise à jour: 15 Avril 2025</p>
+                            <p>Dernière mise à jour: 23 Avril 2025</p>
                             <a href="https://pet-assist.fr">Je découvre</a>
                             <p>En cours de développement:</p>
-                            <progress id="progress" value="90" max="100"> </progress>
+                            <progress id="progress" value="95" max="100"> </progress>
                         </div>
 
                         <div class="infoProjectBox topSite">
@@ -112,7 +112,7 @@
                                 Sans même chercher si cela existait déjà j'ai commencé à créer mon propre outil. De fil
                                 en aiguille j'y ajoute régulièrement des fonctionnalités comme par exemple, l'IMC et la fièvre. <br><br>
                                 PS: Pensez à manger des légumes parfois, ça aide pour la tension.</p>
-                            <p>Dernière mise à jour: 16 Avril 2025</p>
+                            <p>Dernière mise à jour: 22 Avril 2025</p>
                             <a href="https://ma-tension.fr">Je découvre</a>
                             <p><strong>Version 1 Disponible !</strong></p>
                         </div>
