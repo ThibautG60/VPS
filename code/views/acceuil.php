@@ -8,7 +8,7 @@
     <meta name="keywords" content="thibaut gerard,developpement,developpeur,web,logiciel,site internet,projet,oise">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Thibaut GERARD">
-    <title>Mon univers créatif : projets, compétences et présentation</title>
+    <title>Thibaut GERARD: projets, compétences et présentation</title>
 
     <link rel="shortcut icon" href="assets/img/acceuil/iconSite.png" />
     <link rel="stylesheet" href="assets/css/acceuil/style.css">
@@ -97,10 +97,9 @@
                                 Que ce soit pour signaler un animal errant ou pour retrouver un compagnon disparu, Pet Assist permet de publier des annonces rapidement, facilement et gratuitement.<br>
                                 L’idée est de créer une communauté engagée où chacun peut contribuer à retrouver des
                                 animaux perdus de façon simple et efficace.</p>
-                            <p>Dernière mise à jour: 23 Avril 2025</p>
+                            <p>Dernière mise à jour: 22 Mai 2025</p>
                             <a href="https://pet-assist.fr">Je découvre</a>
-                            <p>En cours de développement:</p>
-                            <progress id="progress" value="95" max="100"> </progress>
+                            <p><strong>Version 1 Disponible !</strong></p>
                         </div>
 
                         <div class="infoProjectBox topSite">
@@ -114,18 +113,6 @@
                                 PS: Pensez à manger des légumes parfois, ça aide pour la tension.</p>
                             <p>Dernière mise à jour: 22 Avril 2025</p>
                             <a href="https://ma-tension.fr">Je découvre</a>
-                            <p><strong>Version 1 Disponible !</strong></p>
-                        </div>
-
-                        <div class="infoProjectBox topSite">
-                            <h3>Mamoune Creations</h3>
-                            <hr>
-                            <p class="textProjectBox">Mamoune Creation est un site de vente et de commandes d'objets fait main. <br>
-                            Comme par exemple des figurines en bois Deamon Slayer, The Witcher ou tout ce que vous imaginez. <br>
-                            Le but de ce site est d'offrir une vitrine à la créatrice, avec une possibilité de commander sa propre figurine personalisé. </p>
-                            <a href="#">Bientôt disponible</a>
-                            <p>En cours de développement:</p>
-                            <progress id="progress" value="10" max="100"> </progress>
                         </div>
 
                     </div>
@@ -183,7 +170,8 @@
     <footer>
         <a href="mailto:thibaut.lucien@hotmail.fr">Me contacter</a>
         <a href="assets/file/CVTG2025.pdf" download>Voir mon CV complet</a>
-        <a href="https://github.com/ThibautG60" download>Mon GitHub</a>
+        <a href="https://github.com/ThibautG60">Mon GitHub</a>
+        <a href="https://www.linkedin.com/in/thibaut-g%C3%A9rard-4ba81a359/">Mon linkedIn</a>
         <a href="Mentions">Mentions légales</a>
     </footer>
 </body>
