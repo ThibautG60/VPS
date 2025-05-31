@@ -111,8 +111,9 @@
                                 Sans même chercher si cela existait déjà j'ai commencé à créer mon propre outil. De fil
                                 en aiguille j'y ajoute régulièrement des fonctionnalités comme par exemple, l'IMC et la fièvre. <br><br>
                                 PS: Pensez à manger des légumes parfois, ça aide pour la tension.</p>
-                            <p>Dernière mise à jour: 22 Avril 2025</p>
+                            <p>Dernière mise à jour: 31 Mai 2025</p>
                             <a href="https://ma-tension.fr">Je découvre</a>
+                            <p><strong>Version 2 Disponible !</strong></p>
                         </div>
 
                     </div>
