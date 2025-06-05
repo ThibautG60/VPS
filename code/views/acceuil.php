@@ -92,9 +92,8 @@
                             <h3>Pet assist'</h3>
                             <img src="assets/img/acceuil/petAssist.jpeg" alt="Apercu du projet petAssist">
                             <hr>
-                            <p class="textProjectBox">Ce site a pour objectif de faciliter la mise en relation des
-                                propriétaires d'animaux et des personnes ayant retrouvé un animal perdu.<br>
-                                Que ce soit pour signaler un animal errant ou pour retrouver un compagnon disparu, Pet Assist permet de publier des annonces rapidement, facilement et gratuitement.<br>
+                            <p class="textProjectBox">Ce site a pour objectif de <strong>faciliter la mise en relation des propriétaires d'animaux</strong> et des personnes ayant retrouvé un animal perdu.<br>
+                                Que ce soit pour <strong>signaler un animal</strong> errant ou pour <strong>retrouver un compagnon</strong> disparu, Pet Assist permet de publier des annonces rapidement, facilement et gratuitement.<br>
                                 L’idée est de créer une communauté engagée où chacun peut contribuer à retrouver des
                                 animaux perdus de façon simple et efficace.</p>
                             <p>Dernière mise à jour: 22 Mai 2025</p>
@@ -107,13 +106,25 @@
                             <img src="assets/img/acceuil/heart.jpeg" alt="Apercu du projet Ma Tension">
                             <hr>
                             <p class="textProjectBox">MaTension est un projet très personnel, il me fallait un outil
-                                pour enregistrer mes relevés de tension cardiaque.<br>
+                                pour <strong>enregistrer mes relevés de tension cardiaque</strong>.<br>
                                 Sans même chercher si cela existait déjà j'ai commencé à créer mon propre outil. De fil
-                                en aiguille j'y ajoute régulièrement des fonctionnalités comme par exemple, l'IMC et la fièvre. <br><br>
+                                en aiguille j'y ajoute régulièrement des fonctionnalités comme par exemple, <strong>l'IMC et la fièvre</strong>. <br><br>
                                 PS: Pensez à manger des légumes parfois, ça aide pour la tension.</p>
                             <p>Dernière mise à jour: 31 Mai 2025</p>
                             <a href="https://ma-tension.fr">Je découvre</a>
                             <p><strong>Version 2 Disponible !</strong></p>
+                        </div>
+
+                        <div class="infoProjectBox topSite">
+                            <h3>MyWitness</h3>
+                            <img src="assets/img/acceuil/WitnessLogo.png" alt="Logo du projet MyWitness">
+                            <hr>
+                            <p class="textProjectBox">Cette application Android permet à toute personne victime de violences de <strong>collecter discrètement des preuves</strong> audio, texte et vidéo, stockées automatiquement sur un serveur protégé.<br>
+                                Pour garantir la sécurité de l’utilisateur, l’application <strong>peut se transformer en simple bloc-notes</strong> afin de passer totalement inaperçue.<br>
+                                Un outil essentiel pour documenter les faits en toute discrétion et sérénité.</p>
+                            <a href="#">Bientôt disponible</a>
+                            <p>En cours de developpement:</p>
+                            <progress id="progress" value="20" max="100"> </progress>
                         </div>
 
                     </div>
@@ -139,19 +150,6 @@
                                 Le design repose sur l'utilisation de quelques screens de l'ancien site DropBox ainsi
                                 que l'utilisation de la WayBack Machine.</p>
                             <a href="Dropbox">Je découvre</a>
-                        </div>
-                        <div class="infoProjectBox">
-                            <h3>Planning</h3>
-                            <img src="assets/img/acceuil/calendrier.jpeg" alt="Apercu du projet de calendrier">
-                            <hr>
-                            <p class="textProjectBox">Ce petit projet est un exercice scolaire, où l'objectif était de
-                                créer un planning pour un site fictif appelé ' La
-                                Manu Ecology '.<br>
-                                Le planning devait s'adapter aux mois et années selectionnées. Lorsqu'un énènement est
-                                prévu au jour selectionné, l'utilisateur peut cliquer sur la date pour avoir plus
-                                d'informations.<br>
-                                L'essentiel des évènements se trouvent en 2024.</p>
-                            <a href="Calendrier">Je découvre</a>
                         </div>
                         <div class="infoProjectBox">
                             <h3>Convertisseur degrés</h3>

@@ -22,9 +22,6 @@ else{ // Sinon on charge le controller adapté à la page
         case '/Convertisseur';
             include_once 'views/convert.html'; 
             break;
-        case '/Calendrier';
-            include_once 'views/calendar.php'; 
-            break;
         case '/robots.txt';
             include_once 'robots.txt'; 
             break;
