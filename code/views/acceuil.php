@@ -96,9 +96,9 @@
                                 Que ce soit pour <strong>signaler un animal</strong> errant ou pour <strong>retrouver un compagnon</strong> disparu, Pet Assist permet de publier des annonces rapidement, facilement et gratuitement.<br>
                                 L’idée est de créer une communauté engagée où chacun peut contribuer à retrouver des
                                 animaux perdus de façon simple et efficace.</p>
-                            <p>Dernière mise à jour: 22 Mai 2025</p>
+                            <p>Dernière mise à jour: 26 Juin 2025</p>
                             <a href="https://pet-assist.fr">Je découvre</a>
-                            <p><strong>Version 1 Disponible !</strong></p>
+                            <p><strong>V2.1</strong></p>
                         </div>
 
                         <div class="infoProjectBox topSite">
@@ -112,7 +112,7 @@
                                 PS: Pensez à manger des légumes parfois, ça aide pour la tension.</p>
                             <p>Dernière mise à jour: 31 Mai 2025</p>
                             <a href="https://ma-tension.fr">Je découvre</a>
-                            <p><strong>Version 2 Disponible !</strong></p>
+                            <p><strong>V2.0</strong></p>
                         </div>
 
                         <div class="infoProjectBox topSite">
