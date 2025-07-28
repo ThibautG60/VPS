@@ -13,6 +13,9 @@ else{ // Sinon on charge le controller adapté à la page
         case '/Mentions';
             include_once 'views/mentions.php'; 
             break;
+        case '/Mathematix';
+            include_once 'views/mathematix.html';
+            break;
         case '/Voyage';
             include_once 'views/triphouse.html';
             break;

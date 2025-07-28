@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Thibaut GERARD, développeur dans l'oise, vous propose de découvrir ses projets de développement web et logiciel.">
-    <meta name="keywords" content="thibaut gerard,developpement,developpeur,web,logiciel,site internet,projet,oise">
+    <meta name="keywords" content="thibaut,gerard,Thibaut,Gérard,THIBAUT,GERARD,developpement,developpeur,web,logiciel,site internet,projet,oise">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Thibaut GERARD">
     <title>Thibaut GERARD: projets, compétences et présentation</title>
