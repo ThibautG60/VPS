@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mathematix est un outil pour réviser ses mathématiques.">
-    <meta name="keywords" content=" ">
+    <meta name="description" content="Mathematix est un outil sous la forme d'un jeu pour réviser les mathématiques.">
+    <meta name="keywords" content="mathématiques, révision, jeu, additions, soustractions, multiplications, divisions">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Thibaut GERARD">
     <title>Mathematix - L'outil pour réviser ses mathématiques</title>
@@ -24,28 +24,38 @@
             </div>
         </div>
         <nav>
-            <div class="category categoryActive" id="buttonAddition">Additions</div>
-            <div class="category" id="buttonSoustraction">Soustractions</div>
-            <div class="category" id="buttonMultiplication">Multiplications</div>
-            <div class="category" id="buttonDivision">Divisions</div>
+            <div class="category categoryActive">Additions</div>
+            <div class="category">Soustractions</div>
+            <div class="category">Multiplications</div>
+            <div class="category">Divisions</div>
         </nav>
     </header>
 
     <main>
-        <p>Vous disposez d'une minute pour résoudre le plus grand nombre de calculs possibles.</p>
-        <button id="buttonStart">Commencer une partie</button>
-        <div id="questionContainer">
-            <p id="value1">0</p>
-            <p id="sign">+</p>
-            <p id="value2">0</p>
-            <p>=</p>
-            <input type="number" id="answer" required>
-            <button id="validate">Valider</button>
-        </div>       
-        <progress id="countdownGame" value="60" max="60"></progress>
         <div id="gameInfos">
+            <progress id="countdownGame" value="60" max="60"></progress>
             <p id="timer">Temps restant: 60 secondes</p>
             <p id="score">Score: 0</p>
+        </div>
+
+        <div id="questionContainer">
+            <p>0</p>
+            <p>+</p>
+            <p>0</p>
+            <p>=</p>
+            <input type="number" id="answer" required>
+            <button id="validate">&nbsp;√&nbsp;</button>
+        </div>   
+        
+        <div id="gameResult">
+            <p>Vous avez terminé la partie !</p>
+            <p>Votre score final est de: 0</p>
+            <p>Vous avez 0% de bonnes réponses</p>
+        </div>
+
+        <div id="gameStart">
+            <p>Vous disposez d'une minute pour résoudre le plus grand nombre de calculs possibles.</p>
+            <button id="buttonStart">Commencer une partie</button>
         </div>
     </main>
 

@@ -38,6 +38,7 @@ header{
     width: 8vw;
     height: auto;
     border-radius: 10px;
+    box-shadow: 0px 0px 15px whitesmoke;
 }
 
 #logo > div{
@@ -92,24 +93,26 @@ header > nav{
     box-shadow: 0px 0px 15px rgb(2, 161, 23);
     cursor: pointer;
 }
+
 /* MAIN */
-main{
+/* Boutton pour démarrer la partie */
+#gameStart{
     display: flex;
+    width: 80%;
+    margin: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    width: 100%;
 }
 
-main>p {
+#gameStart > p {
     color: whitesmoke;
     font-size: 1.5rem;
     font-weight: 400;
     margin: 5% auto;
 }
 
-main>button{
+#gameStart>button{
     background-color: rgb(14, 36, 102);
     color: whitesmoke;
     border: none;
@@ -120,7 +123,7 @@ main>button{
     box-shadow: 0px 0px 10px rgb(14, 36, 102);
 }
 
-main>button:hover, main>button:focus, main>button:active {
+#gameStart>button:hover, #gameStart>button:focus, #gameStart>button:active {
     transition: background-color 0.5s ease, box-shadow 0.5s ease;
     background-color: rgb(2, 161, 23);
     box-shadow: 0px 0px 30px rgb(2, 161, 23);
@@ -128,6 +131,7 @@ main>button:hover, main>button:focus, main>button:active {
 }
 /* Décompte de début de partie */
 #countdown{
+    justify-self: center;
     color: whitesmoke;
     font-size: 5rem;
     font-weight: 500;
@@ -135,6 +139,8 @@ main>button:hover, main>button:focus, main>button:active {
 
 /* Infos de la partie */
 #gameInfos {
+    display: none;
+    width: 50%;
     align-items: center;
     margin: 4% auto;
 
@@ -142,16 +148,17 @@ main>button:hover, main>button:focus, main>button:active {
     color: whitesmoke;
 }
 
-/* Décompte de la partie */
+/* Décompte de la partie (60s) */
 #countdownGame {
-    width: 70%;
+    width: 100%;
     font-size: 1.5rem;
     color: whitesmoke;
 }
 
-/* Question */
+/* Questions */
 #questionContainer {
-    display: flex;
+    display: none;
+    width: 80%;
     justify-content: space-around;
     align-items: center;
     margin: 5% auto;
@@ -175,7 +182,7 @@ main>button:hover, main>button:focus, main>button:active {
     background-color: rgb(14, 36, 102);
     color: whitesmoke;
     border: none;
-    padding: 1.5% 2.5%;
+    padding: 1.5% 3.5%;
     font-size: 1.7rem;
     font-weight: 500;
     border-radius: 5px;
@@ -191,6 +198,16 @@ main>button:hover, main>button:focus, main>button:active {
 
 #question > p, #answer, #validate {
     margin: 0 2%;
+}
+
+/* Résultat de la partie */
+#gameResult {
+    display: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 3% auto;
 }
 
 /* Animations */
@@ -242,11 +259,11 @@ footer{
     .category{
         font-size: 0.8rem; 
     }
-    main>p {
+    #gameStart{ 
         font-size: 1.2rem;
         text-align: center;
     }
-    main>button{
+    #gameStart>button{
         font-size: 1.5rem;
     }
     footer{

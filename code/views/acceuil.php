@@ -130,6 +130,16 @@
                     </div>
                     <div class="linkBox">
                         <div class="infoProjectBox">
+                            <h3>Mathematix</h3>
+                            <img src="assets/img/mathematix/math-logo.jpeg" alt="Logo du projet Mathematix">
+                            <hr>
+                            <p class="textProjectBox">Mathematix est un petit jeu ludique conçu pour <strong>réviser ses tables de multiplication</strong> et <strong>améliorer son calcul mental</strong>.<br>
+                                Idéal pour les enfants comme pour les adultes, il propose des exercices pour s'entraîner de façon interactive et amusante.<br>
+                                Un excellent moyen de renforcer ses bases en mathématiques.</p>
+                            <a href="Mathematix">On joue ?</a>
+                            <p>Ajout: 29 Juillet 2025</p>
+                        </div>
+                        <div class="infoProjectBox">
                             <h3>Les maisons du voyage</h3>
                             <img src="assets/img/acceuil/tripHouse.jpeg" alt="Apercu du projet maisons du voyage">
                             <hr>
