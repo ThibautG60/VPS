@@ -236,18 +236,13 @@ footer{
 
 /* Medias Queries */
 /* Tab & phone */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     header{ 
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #logo {
         width: 100%;
-        margin: 2% auto;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
     }
+    #logo { width: 100%; }
     #logo > img { width: 20vw; }
     #logo > div > p { font-size: 1.8rem; }
     #logo > div > h1 { font-size: 1rem; }
