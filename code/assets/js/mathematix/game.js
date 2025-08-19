@@ -29,39 +29,47 @@ window.addEventListener('load', function () {
 
 // Bouttons de sélection de catégorie
 nav.children[0].addEventListener("click", function () {
-    nav.children[0].classList.add("categoryActive");
-    nav.children[1].classList.remove("categoryActive");
-    nav.children[2].classList.remove("categoryActive");
-    nav.children[3].classList.remove("categoryActive");
-    gameType = "addition";
-    setUI("base");
+    if(gameStarted == false){
+        nav.children[0].classList.add("categoryActive");
+        nav.children[1].classList.remove("categoryActive");
+        nav.children[2].classList.remove("categoryActive");
+        nav.children[3].classList.remove("categoryActive");
+        gameType = "addition";
+        setUI("base");
+    }
 });
 
 nav.children[1].addEventListener("click", function () {
-    nav.children[0].classList.remove("categoryActive");
-    nav.children[1].classList.add("categoryActive");
-    nav.children[2].classList.remove("categoryActive");
-    nav.children[3].classList.remove("categoryActive");
-    gameType = "soustraction";
-    setUI("base");
+    if(gameStarted == false){
+        nav.children[0].classList.remove("categoryActive");
+        nav.children[1].classList.add("categoryActive");
+        nav.children[2].classList.remove("categoryActive");
+        nav.children[3].classList.remove("categoryActive");
+        gameType = "soustraction";
+        setUI("base");
+    }
 });
 
 nav.children[2].addEventListener("click", function () {
-    nav.children[0].classList.remove("categoryActive");
-    nav.children[1].classList.remove("categoryActive");
-    nav.children[2].classList.add("categoryActive");
-    nav.children[3].classList.remove("categoryActive");
-    gameType = "multiplication";
-    setUI("base");
+    if(gameStarted == false){
+        nav.children[0].classList.remove("categoryActive");
+        nav.children[1].classList.remove("categoryActive");
+        nav.children[2].classList.add("categoryActive");
+        nav.children[3].classList.remove("categoryActive");
+        gameType = "multiplication";
+        setUI("base");
+    }
 });
 
 nav.children[3].addEventListener("click", function () {
-    nav.children[0].classList.remove("categoryActive");
-    nav.children[1].classList.remove("categoryActive");
-    nav.children[2].classList.remove("categoryActive");
-    nav.children[3].classList.add("categoryActive");
-    gameType = "division";
-    setUI("base");
+    if(gameStarted == false){
+        nav.children[0].classList.remove("categoryActive");
+        nav.children[1].classList.remove("categoryActive");
+        nav.children[2].classList.remove("categoryActive");
+        nav.children[3].classList.add("categoryActive");
+        gameType = "division";
+        setUI("base");
+    }
 });
 
 buttonStart.addEventListener("click", function () {
