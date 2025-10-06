@@ -116,15 +116,13 @@
                         </div>
 
                         <div class="infoProjectBox topSite">
-                            <h3>MyWitness</h3>
-                            <img src="assets/img/acceuil/WitnessLogo.png" alt="Logo du projet MyWitness">
+                            <h3>Normand Electricité</h3>
+                            <img src="assets/img/acceuil/normandElec.png" alt="Logo du projet Normand Electricité">
                             <hr>
-                            <p class="textProjectBox">Cette application Android permet à toute personne victime de violences de <strong>collecter discrètement des preuves</strong> audio, texte et vidéo, stockées automatiquement sur un serveur protégé.<br>
-                                Pour garantir la sécurité de l’utilisateur, l’application <strong>peut se transformer en simple bloc-notes</strong> afin de passer totalement inaperçue.<br>
-                                Un outil essentiel pour documenter les faits en toute discrétion et sérénité.</p>
+                            <p class="textProjectBox">Je réalise actuellement un site internet professionnel pour un électricien basé dans la Manche.<br> Ce site a pour objectif de présenter ses services, ses réalisations, ainsi que ses coordonnées et horaires d’intervention.<br> Il permettra aux clients de découvrir l’expertise de l’entreprise, de demander un devis en ligne et de trouver facilement toutes les informations nécessaires pour leurs travaux d’électricité, que ce soit pour de l’installation, du dépannage ou de la rénovation.<br>
                             <a href="#">Bientôt disponible</a>
                             <p>En cours de developpement:</p>
-                            <progress id="progress" value="20" max="100"> </progress>
+                            <progress id="progress" value="30" max="100"> </progress>
                         </div>
 
                     </div>
