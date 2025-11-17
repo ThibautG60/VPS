@@ -10,7 +10,10 @@
     --sun: #f8c969;
     --button: rgb(35, 35, 235);
     --button_a: rgb(65, 65, 233);
-    --card_project: rgba(245, 245, 245, 0.250);
+    --card_project: rgba(104, 103, 183, 0.250);
+    --client_background: rgba(59, 58, 65, 0.46);
+    --client-link: #736e64;
+    --client-linkH: #a89e8e;
 }
 /* Style */
 html,
@@ -162,12 +165,63 @@ h2 {
     opacity: 1;
 }
 
+/* Cards des clients */
+#clientBox {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% auto;
+}
+
+.client {
+    width: 40%;
+    color: whitesmoke;
+    background-color: var(--client_background);
+    border-radius: 10% 0px;
+    position: relative;
+    padding: 2%;
+    margin-bottom: 2%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.client>img {
+    margin: auto;
+    width: 50%;
+    aspect-ratio: 16 / 9;
+    border-radius: 5%;
+}
+
+.client>a {
+    flex-basis: 30%;
+    background-color: var(--client-link);
+    border: none;
+    border-radius: 5%;
+    margin: auto;
+    padding: 3%;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.client>a:hover,
+.client>a:active {
+    background-color: var(--client-linkH);
+    box-shadow: rgba(255, 255, 255, 0.80) 0px 0px 15px;
+}
+
 /* Cards des projets */
 #mainBox {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: auto;
+    margin: 5% auto;
 }
 
 .linkBox {
@@ -191,6 +245,8 @@ h2 {
 
 .infoProjectBox {
     width: 25%;
+    height: auto;
+    min-height: 500px;
     color: whitesmoke;
     border: 1px solid var(--card_project);
     padding: 2%;
@@ -202,6 +258,7 @@ h2 {
     align-items: center;
 }
 
+.client>h3,
 .infoProjectBox>h3 {
     flex-basis: 50%;
     text-decoration: underline;
@@ -216,11 +273,13 @@ h2 {
     border-radius: 5%;
 }
 
+.client>hr,
 .infoProjectBox>hr {
     flex-basis: 100%;
     color: rgba(245, 245, 245, 0.250);
 }
 
+.client>p,
 .infoProjectBox>p {
     flex-basis: 100%;
     font-weight: lighter;
@@ -348,7 +407,6 @@ h2 {
     50% { opacity: 1; }
 }
 
-
 /* Medias Queries */
 /* Tablettes & mobile */
 @media (max-width: 1023px) {
@@ -369,15 +427,27 @@ h2 {
         border-left: none;
     }
 
+    #clientBox {
+        width: 90%;
+    }
+
+    .client {
+        width: 90%;
+        margin: 2% auto 2% auto;
+        padding: 10%;
+    }
+
     .infoProjectBox {
         width: 80%;
         margin: 2% auto 2% auto;
     }
 
+    .client>h3, .client>img,
     .infoProjectBox>h3, .infoProjectBox>img{
         flex-basis: 100%;
     }
 
+    .client>a,
     .infoProjectBox>a {
         flex-basis: 50%;
     }
