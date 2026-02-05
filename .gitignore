@@ -1,2 +1,4 @@
+debian
+*.pub
 .htaccess
 robots.txt

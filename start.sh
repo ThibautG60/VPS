@@ -26,7 +26,7 @@ else
     echo "Aucun conteneur trouvé. Création et lancement..."
     docker run -d \
         --name "$CONTAINER_NAME" \
-        -p 80:80 \
+        -p 60:80 \
         -v ./code:/var/www/html:rw \
         "$IMAGE_NAME"
 fi

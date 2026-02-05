@@ -126,7 +126,7 @@
                             <p class="textProjectBox"><strong>Let Another Blind Test</strong> est mon projet de fin d'études CDA.<br>
                             Le but sera de pouvoir proposer un générateur de blind test sur mesure. L’application devra également gérer toutes vos futures parties grâce à un grand nombre de fonctionnalités et un design attrayant.</p>
                             <p>Developpement en cours:</p>
-                            <progress max="100" value="5"></progress>
+                            <progress max="100" value="15"></progress>
                         </div>
                         <div class="infoProjectBox topSite">
                             <h3>Pet assist</h3>
@@ -136,9 +136,9 @@
                                 Que ce soit pour <strong>signaler un animal</strong> errant ou pour <strong>retrouver un compagnon</strong> disparu, Pet Assist permet de publier des annonces rapidement, facilement et gratuitement.<br>
                                 L’idée est de créer une communauté engagée où chacun peut contribuer à retrouver des
                                 animaux perdus de façon simple et efficace.</p>
-                            <p>Dernière mise à jour: 21 Aout 2025</p>
+                            <p>Dernière mise à jour: 5 Fevrier 2025</p>
                             <a href="https://pet-assist.fr">Je découvre</a>
-                            <p><strong>V2.2</strong></p>
+                            <p><strong>V2.3</strong></p>
                         </div>
                         <div class="infoProjectBox topSite">
                             <h3>MaTension</h3>
