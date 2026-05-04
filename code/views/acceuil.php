@@ -28,7 +28,7 @@
             <div class="scroll" id="headBox">
                 <img src="assets/img/acceuil/me.jpg" alt="Tu veux ma photo ? bah elle est là normalement">
                 <p>Bonjour et bienvenue sur la présentation de mes humbles projets.<br>
-                    Je m'appelle <strong>Thibaut</strong>, j'ai 29 ans, je viens de l'Oise.<br>
+                    Je m'appelle <strong>Thibaut</strong>, j'ai 30 ans, je viens de l'Oise.<br>
                     Je suis passionné par le <strong>développement informatique</strong> depuis mes années collèges.<br>
                     Et depuis, je n'ai cessé d'explorer ce domaine en constante évolution.<br>
                     Aujourd'hui, j'ai décidé de <strong>transformer cette passion en véritable métier</strong>.<br><br>
@@ -45,10 +45,20 @@
                 <hr>
                 <div id="clientBox">
                     <div class="client">
-                        <img src="assets/img/acceuil/lincolnElec.png" alt="Apercu du projet petAssist">
+                        <img src="assets/img/acceuil/lincolnElec.png" alt="Logo de l'entreprise Lincoln Electric">
                         <p class="textProjectBox"><strong>Lincoln Electric</strong> est une entreprise américaine créée en 1895, reconnue comme l’un des leaders mondiaux du soudage. Elle conçoit et produit des équipements de soudage, des consommables comme les électrodes et les fils, ainsi que des solutions automatisées et robotisées destinées à l’industrie.
                         <br>Je participe au développement des logiciels embarqués dans les postes à souder.</p>
                         <a href="https://www.lincolnelectric.com/fr-fr/">Visiter le site</a>
+                    </div>
+                    <div class="client">
+                        <img src="assets/img/acceuil/logosite_lp.png" alt="Logo du restaurant Le Pigeonnier">
+                        <p class="textProjectBox"><strong>Le Pigeonnier</strong> est un restaurant situé dans la région, offrant une cuisine raffinée et un service de qualité. J’ai créé leur site internet pour améliorer leur visibilité en ligne et faciliter la lecture du menu pour leurs clients.</p>
+                        <a href="https://www.le-pigeonnier.fr/">Visiter le site</a>
+                    </div>
+                    <div class="client">
+                        <img src="assets/img/acceuil/logosite_nag.webp" alt="Logo du salon de massage Nagomi">
+                        <p class="textProjectBox"><strong>Nagomi</strong> est un salon de massage offrant une expérience de détente unique. J’ai créé leur site internet pour améliorer leur visibilité en ligne et faciliter la prise de rendez-vous pour leurs clients.</p>
+                        <a href="https://www.lepanda-nagomi.fr/">Visiter le site</a>
                     </div>
                     <div class="client">
                         <img src="assets/img/acceuil/normandElec.jpg" alt="Logo de l'entreprise Normand Electricité">
@@ -126,7 +136,7 @@
                             <p class="textProjectBox"><strong>Let Another Blind Test</strong> est mon projet de fin d'études CDA.<br>
                             Le but sera de pouvoir proposer un générateur de blind test sur mesure. L’application devra également gérer toutes vos futures parties grâce à un grand nombre de fonctionnalités et un design attrayant.</p>
                             <p>Developpement en cours:</p>
-                            <progress max="100" value="15"></progress>
+                            <progress max="100" value="50"></progress>
                         </div>
                         <div class="infoProjectBox topSite">
                             <h3>Pet assist</h3>
@@ -141,6 +151,15 @@
                             <p><strong>V2.3</strong></p>
                         </div>
                         <div class="infoProjectBox topSite">
+                            <h3>Nouveau Portfolio</h3>
+                            <hr>
+                            <p class="textProjectBox">Parce-qu'il faut bien le reconnaitre, le site pour mes projets est l'un des plus vieux.</p>
+                            <p>Developpement en cours:</p>
+                            <progress max="100" value="1"></progress>
+                        </div>
+                    </div>
+                    <div class="linkBox">
+                        <div class="infoProjectBox">
                             <h3>MaTension</h3>
                             <img src="assets/img/acceuil/heart.jpeg" alt="Apercu du projet Ma Tension">
                             <hr>
@@ -153,8 +172,6 @@
                             <a href="https://ma-tension.fr">Je découvre</a>
                             <p><strong>V2.2</strong></p>
                         </div>
-                    </div>
-                    <div class="linkBox">
                         <div class="infoProjectBox">
                             <h3>Mathematix</h3>
                             <img src="assets/img/mathematix/math-logo.jpeg" alt="Logo du projet Mathematix">
@@ -186,16 +203,6 @@
                                 Le design repose sur l'utilisation de quelques screens de l'ancien site DropBox ainsi
                                 que l'utilisation de la WayBack Machine.</p>
                             <a href="Dropbox">Je découvre</a>
-                        </div>
-                        <div class="infoProjectBox">
-                            <h3>Convertisseur degrés</h3>
-                            <img src="assets/img/acceuil/convert.jpeg" alt="Apercu du projet de convertisseur">
-                            <hr>
-                            <p class="textProjectBox">Ce site permet de convertir facilement toutes les unités de
-                                température (Celsius, Fahrenheit, Kelvin, etc.).<br>
-                                Avec une interface simple et intuitive, il offre une solution
-                                rapide et efficace pour effectuer des conversions de degrés.</p>
-                            <a href="Convertisseur">Je découvre</a>
                         </div>
                     </div>
                 </div>

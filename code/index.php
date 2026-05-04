@@ -22,9 +22,6 @@ else{ // Sinon on charge le controller adapté à la page
         case '/Dropbox';
             include_once 'views/dropbox.html'; 
             break;
-        case '/Convertisseur';
-            include_once 'views/convert.html'; 
-            break;
         case '/robots.txt';
             include_once 'robots.txt'; 
             break;

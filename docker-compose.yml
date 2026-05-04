@@ -1,0 +1,18 @@
+services:
+  # Serveur web Apache avec PHP
+  php:
+    container_name: tg_apache
+    image: atom_apache_php_pdo
+    build: 
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - ./code:/var/www/html/
+    ports:
+      - "80:80"
+    networks:
+      - atom-network
+
+networks:
+  atom-network:
+    external: true
