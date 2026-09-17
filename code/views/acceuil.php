@@ -136,7 +136,7 @@
                             <p class="textProjectBox"><strong>Let Another Blind Test</strong> est mon projet de fin d'études CDA.<br>
                             Le but sera de pouvoir proposer un générateur de blind test sur mesure. L’application devra également gérer toutes vos futures parties grâce à un grand nombre de fonctionnalités et un design attrayant.</p>
                             <p>Developpement en cours:</p>
-                            <progress max="100" value="50"></progress>
+                            <progress max="100" value="95"></progress>
                         </div>
                         <div class="infoProjectBox topSite">
                             <h3>Pet assist</h3>
@@ -155,7 +155,7 @@
                             <hr>
                             <p class="textProjectBox">Parce-qu'il faut bien le reconnaitre, le site pour mes projets est l'un des plus vieux.</p>
                             <p>Developpement en cours:</p>
-                            <progress max="100" value="1"></progress>
+                            <progress max="100" value="25"></progress>
                         </div>
                     </div>
                     <div class="linkBox">
@@ -210,7 +210,7 @@
         </div>
     </main>
     <footer>
-        <a href="mailto:thibaut.lucien@hotmail.fr">Me contacter</a>
+        <a href="mailto:contact@thibaut-gerard.fr">Me contacter</a>
         <a href="assets/file/CVTG2025.pdf" download>Voir mon CV complet</a>
         <a href="https://github.com/ThibautG60">Mon GitHub</a>
         <a href="https://www.linkedin.com/in/thibaut-g%C3%A9rard-4ba81a359/">Mon linkedIn</a>
