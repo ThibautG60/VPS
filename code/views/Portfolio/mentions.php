@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mentions légales du site de Thibaut GERARD, developpeur web dans l'oise">
-    <meta name="keywords" content="Thibaut,GERARD,mentions légales">
-    <meta name="robots" content="none">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Mentions légales du portfolio de Thibaut GERARD, développeur web dans l'Oise.">
+    <meta name="keywords" content="mentions légales, Thibaut GERARD, développeur web, Oise">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="assets/img/acceuil/iconSite.ico" type="image/x-icon"/>
     <title>Thibaut GERARD - Mentions légales</title>
 
-    <link rel="shortcut icon" href="assets/img/acceuil/iconSite.png" />
-    <link rel="stylesheet" href="assets/css/acceuil/style.css">
+    <!-- Fichiers CSS pour le thème et le style -->
+    <link rel="stylesheet" href="/assets/css/Portfolio/theme.css">
+    <link rel="stylesheet" href="/assets/css/Portfolio/style.css">
 
-    <script defer src="assets/js/acceuil/base.js"></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/assets/js/Portfolio/tailwind-config.js"></script>
 </head>
 
 <body>
