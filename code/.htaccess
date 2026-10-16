@@ -1,19 +1,48 @@
+Options -Indexes
+DirectoryIndex index.php
+AddDefaultCharset UTF-8
+AddType application/xml .xml
+AddType text/plain .txt
+
 RewriteEngine On
 
-# Ne pas rediriger si le fichier existe
-RewriteCond %{REQUEST_URI} \.xml$ [NC]
-RewriteRule ^ - [L]
-AddType application/xml .xml
+# Redirection HTTP vers HTTPS (sauf en local, et en respectant un éventuel reverse proxy)
+# R=301 : Redirection permanente
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:\d+)?$ [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Autoriser les fichiers statiques (images, CSS, JS)
-# L : Fin de règle | - : On change rien, pas de redirection
+# Interdit l'accès direct aux dossiers internes et aux fichiers cachés (hors .well-known)
+RewriteRule ^(utils|views)(/|$) - [F,L]
+RewriteRule (^|/)\.(?!well-known/) - [F,L]
+
+# Fichiers statiques servis tels quels (assets, robots.txt, sitemap.xml)
+# L : Fin de règle | - : On ne change rien, pas de réécriture
 RewriteRule ^assets/ - [L]
+RewriteRule ^(robots\.txt|sitemap\.xml)$ - [L]
 
-# Redirection de toutes les routes vers ce fichier
-# ^(.*)$ : Prend toutes les URL | index.php : Redirige tous les chemins vers ce fichier | QSA : Conserve les paramètres
+# Toutes les autres routes passent par le contrôleur frontal
+# QSA : Conserve les paramètres de l'URL
 RewriteRule ^(.*)$ index.php [L,QSA]
 
-# Redirection HTTP vers HTTPS
-# R=301 : Redirection permanante
-RewriteCond %{HTTPS} off 
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 month"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/xml application/javascript application/json image/svg+xml
+</IfModule>

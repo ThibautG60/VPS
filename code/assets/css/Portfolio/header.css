@@ -1,0 +1,159 @@
+@media (max-width: 767px) {
+    .header-navigation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 6rem 1.5rem 2rem;
+        overflow-y: auto;
+        background:
+            radial-gradient(ellipse at 100% 0%, rgba(0, 242, 255, 0.12), transparent 48%),
+            radial-gradient(ellipse at 0% 100%, rgba(182, 0, 248, 0.1), transparent 45%),
+            rgba(16, 20, 21, 0.99);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-top: 1px solid rgba(0, 242, 255, 0.35);
+    }
+
+    .header-navigation.is-open {
+        display: flex;
+        animation: mobile-menu-enter 180ms ease-out both;
+    }
+
+    .material-symbols-outlined {
+        color: #00f2ff;
+        font-size: 1rem;
+    }
+
+    .header-navigation-link {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+        width: min(100%, 34rem);
+        min-height: 4rem;
+        padding: 0.8rem 1rem;
+        border: 1px solid transparent;
+        border-radius: 0.85rem;
+        font-weight: 500;
+        font-size: 1.25rem;
+        transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+    }
+
+    .header-navigation-link::before {
+        counter-increment: mobile-nav-item;
+        content: "0" counter(mobile-nav-item);
+        color: #00dbe7;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.04em;
+        opacity: 0.8;
+        transition: color 180ms ease, opacity 180ms ease;
+    }
+
+    .header-navigation-link::after {
+        content: "arrow_forward";
+        margin-left: auto;
+        color: #00f2ff;
+        font-family: "Material Symbols Outlined";
+        font-size: 1.25rem;
+        opacity: 0;
+        transform: translateX(-0.5rem);
+        transition: opacity 180ms ease, transform 180ms ease;
+    }
+
+    .header-navigation {
+        counter-reset: mobile-nav-item;
+    }
+
+    .header-navigation .header-navigation-link:hover,
+    .header-navigation .header-navigation-link:focus-visible {
+        color: #e1fdff;
+        background: linear-gradient(100deg, rgba(0, 242, 255, 0.2), rgba(182, 0, 248, 0.12));
+        border-color: rgba(0, 242, 255, 0.5);
+        outline: none;
+        transform: translateX(8px);
+        box-shadow: 0 0 28px rgba(0, 242, 255, 0.14);
+    }
+
+    .header-navigation .header-navigation-link:hover::before,
+    .header-navigation .header-navigation-link:focus-visible::before {
+        color: #ebb2ff;
+        opacity: 1;
+    }
+
+    .header-navigation .header-navigation-link:hover::after,
+    .header-navigation .header-navigation-link:focus-visible::after {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .header-navigation-link:focus-visible {
+        box-shadow: 0 0 0 2px rgba(0, 242, 255, 0.3);
+    }
+
+    .mobile-menu-toggle {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        width: 2.75rem;
+        height: 2.75rem;
+        place-items: center;
+        border: 1px solid rgba(0, 242, 255, 0.25);
+        border-radius: 0.75rem;
+        background: rgba(0, 242, 255, 0.06);
+        transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .mobile-menu-toggle:hover,
+    .mobile-menu-toggle[aria-expanded="true"] {
+        border-color: rgba(0, 242, 255, 0.65);
+        background: rgba(0, 242, 255, 0.12);
+        box-shadow: 0 0 18px rgba(0, 242, 255, 0.16);
+    }
+
+    .mobile-menu-toggle:focus-visible {
+        outline: 2px solid #00f2ff;
+        outline-offset: 3px;
+    }
+
+    .mobile-menu-toggle .material-symbols-outlined {
+        font-size: 1.5rem;
+        transition: transform 180ms ease;
+    }
+
+    .mobile-menu-toggle[aria-expanded="true"] .material-symbols-outlined {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes mobile-menu-enter {
+    from {
+        opacity: 0;
+        transform: translateY(-0.4rem) scale(0.98);
+        transform-origin: top right;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        transform-origin: top right;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .header-navigation.is-open {
+        animation: none;
+    }
+
+    .header-navigation-link,
+    .mobile-menu-toggle,
+    .mobile-menu-toggle .material-symbols-outlined {
+        transition: none;
+    }
+}
