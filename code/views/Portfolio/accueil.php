@@ -76,6 +76,12 @@
                                         $icon = "php";
                                         $label = "PHP";
                                         include 'Components/skill.php'; 
+                                        $icon = "code";
+                                        $label = "C++";
+                                        include 'Components/skill.php';
+                                        $icon = "code";
+                                        $label = "Python";
+                                        include 'Components/skill.php'; 
                                         $icon = "database";
                                         $label = "SQL";
                                         include 'Components/skill.php'; 
@@ -85,15 +91,12 @@
                                         $icon = "merge";
                                         $label = "Git";
                                         include 'Components/skill.php';
-                                        $icon = "code";
-                                        $label = "C++";
-                                        include 'Components/skill.php'; 
                                 ?>
-                                <!-- QT/QML bloc -->
-                                <div class="glass-panel rounded-xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 cursor-default bg-secondary/5 border-secondary/30 neon-glow-secondary relative overflow-hidden col-span-2">
+                                <!-- QT/YOCTO bloc -->
+                                <div class="glass-panel rounded-xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 cursor-default bg-secondary/5 border-secondary/30 neon-glow-secondary relative overflow-hidden col-span-1">
                                         <div class="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent"></div>
                                                 <span class="material-symbols-outlined text-4xl text-secondary drop-shadow-[0_0_8px_rgba(182,0,248,0.8)] relative z-10">integration_instructions</span>
-                                                <span class="font-headline-md text-headline-md text-on-secondary-container font-bold relative z-10 tracking-wide">QT / QML</span>
+                                                <span class="font-headline-md text-headline-md text-on-secondary-container font-bold relative z-10 tracking-wide">YOCTO</span>
                                         <div class="absolute -right-4 -bottom-4 w-16 h-16 bg-secondary/20 rounded-full blur-xl"></div>
                                 </div>
                         </div>
@@ -151,9 +154,9 @@
                                         <div class="mb-4 text-primary opacity-80 group-hover:opacity-100 transition-opacity">
                                                 <span class="material-symbols-outlined text-4xl">spa</span>
                                         </div>
-                                        <h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-3">Nagomi</h3>
+                                        <h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-3">Le Panda & Nagomi</h3>
                                         <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-1">
-                                                Site web vitrine pour le spa Nagomi. J'ai utilisé VantaJS pour ajouter un header animé.
+                                                Site web vitrine pour le salon de massage Le Panda & Nagomi. J'ai utilisé VantaJS pour ajouter un header animé.
                                         </p>
                                         <div class="flex flex-wrap gap-2 mb-6">
                                                 <span class="px-2 py-1 rounded border border-outline-variant text-outline font-label-caps text-[10px] bg-surface-container">React</span>
@@ -161,7 +164,7 @@
                                                 <span class="px-2 py-1 rounded border border-outline-variant text-outline font-label-caps text-[10px] bg-surface-container">VantaJS</span>
                                         </div>
                                         <a 
-                                                href="#"
+                                                href="https://lepanda-nagomi.fr"
                                                 class="w-full py-3 rounded-lg bg-surface-container-high border border-outline-variant text-primary font-technical-sm text-technical-sm group-hover:bg-primary/10 group-hover:border-primary/50 transition-all duration-300 flex items-center justify-center gap-2"
                                         >
                                                 <span class="">Visiter</span>
