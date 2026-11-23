@@ -1,17 +1,33 @@
+x-php-base: &php-base
+  image: atom_apache_php_pdo
+  build:
+    context: .
+    dockerfile: dockerfile
+  volumes:
+    - ./code:/var/www/html/
+
 services:
-  # Serveur web Apache avec PHP
-  php:
-    container_name: tg_apache
-    image: atom_apache_php_pdo
-    build: 
-      context: .
-      dockerfile: dockerfile
-    volumes:
-      - ./code:/var/www/html/
+  php-local:
+    <<: *php-base
+    container_name: tg_apache_local
+    profiles: ["local"]
     ports:
       - "80:80"
+
+  # Prod : derrière Traefik
+  php-prod:
+    <<: *php-base
+    container_name: tg_apache
+    profiles: ["prod"]
     networks:
       - atom-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.tg.rule=Host(`thibaut-gerard.fr`) || Host(`www.thibaut-gerard.fr`)"
+      - "traefik.http.routers.tg.entrypoints=websecure"
+      - "traefik.http.routers.tg.tls.certresolver=atom"
+      # Middleware HSTS
+      - "traefik.http.routers.tg.middlewares=redirect-www@docker,hsts@docker"
 
 networks:
   atom-network:

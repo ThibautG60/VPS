@@ -53,8 +53,8 @@
                     <div class="mb-6">
                         <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Hébergeur du site:</h2>
                         <ul>
-                            <li class="font-body-md text-body-md text-on-surface-variant text-lg leading-relaxed">Nom & prénom: OVH</li>
-                            <li class="font-body-md text-body-md text-on-surface-variant text-lg leading-relaxed">Mail: Voir sur le site d'OVH</li>
+                            <li class="font-body-md text-body-md text-on-surface-variant text-lg leading-relaxed">Nom & prénom: GERARD Thibaut</li>
+                            <li class="font-body-md text-body-md text-on-surface-variant text-lg leading-relaxed">Mail: contact@thibaut-gerard.fr</li>
                         </ul>
                     </div>
                     <hr class="mb-6">
