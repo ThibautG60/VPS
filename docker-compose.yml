@@ -1,10 +1,18 @@
 x-php-base: &php-base
-  image: atom_apache_php_pdo
+  image: atom_apache_php_pdo_mailer
   build:
     context: .
     dockerfile: dockerfile
   volumes:
     - ./code:/var/www/html/
+  environment:
+    - SMTP_HOST=${SMTP_HOST}
+    - SMTP_PORT=${SMTP_PORT}
+    - SMTP_USER=${SMTP_USER}
+    - SMTP_PASSWORD=${SMTP_PASSWORD}
+  depends_on:
+    composer:
+      condition: service_completed_successfully
 
 services:
   php-local:
@@ -12,9 +20,8 @@ services:
     container_name: tg_apache_local
     profiles: ["local"]
     ports:
-      - "80:80"
+      - "81:80"
 
-  # Prod : derrière Traefik
   php-prod:
     <<: *php-base
     container_name: tg_apache
@@ -28,6 +35,18 @@ services:
       - "traefik.http.routers.tg.tls.certresolver=atom"
       # Middleware HSTS
       - "traefik.http.routers.tg.middlewares=redirect-www@docker,hsts@docker"
+
+  # Installation ponctuelle des dépendances PHP (Composer) avant le démarrage d'Apache
+  composer:
+    image: public.ecr.aws/docker/library/composer:2
+    user: "${PA_UID:-1000}:${PA_GID:-1000}"
+    working_dir: /var/www/html
+    environment:
+      - COMPOSER_HOME=/tmp/composer
+    volumes:
+      - ./code:/var/www/html
+    # Prod : COMPOSER_FLAGS="--no-dev --optimize-autoloader" dans le .env
+    command: install --no-interaction --prefer-dist ${COMPOSER_FLAGS:-}
 
 networks:
   atom-network:

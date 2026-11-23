@@ -6,6 +6,9 @@ switch ($_SERVER['REDIRECT_URL']){
     case '/Mentions';
         include_once 'views/Portfolio/mentions.php'; 
         break;
+    case '/Contact';
+        include_once 'controllers/contact.controller.php'; 
+        break;
     case '/robots.txt';
         include_once 'robots.txt'; 
         break;

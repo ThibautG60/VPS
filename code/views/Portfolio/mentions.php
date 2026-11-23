@@ -47,14 +47,16 @@
                         <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Editeur du site:</h2>
                         <ul>
                             <li class="font-body-md text-body-md text-on-surface-variant text-lg leading-relaxed">Nom & prénom: GERARD Thibaut</li>
-                            <li class="font-body-md text-body-md text-on-surface-variant text-lg leading-relaxed">Mail: Voir dans la section "Me contacter"</li>
+                            <li class="font-body-md text-body-md text-on-surface-variant text-lg leading-relaxed">Mail: <a href="/Contact">Voir dans la section "Me contacter"</a></li>
                         </ul>
                     </div>
                     <div class="mb-6">
                         <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Hébergeur du site:</h2>
                         <ul>
-                            <li class="font-body-md text-body-md text-on-surface-variant text-lg leading-relaxed">Nom & prénom: GERARD Thibaut</li>
-                            <li class="font-body-md text-body-md text-on-surface-variant text-lg leading-relaxed">Mail: contact@thibaut-gerard.fr</li>
+                            <li class="font-body-md text-body-md text-on-surface-variant text-lg leading-relaxed">Site hébergé par: OVH</li>
+                            <li class="font-body-md text-body-md text-on-surface-variant text-lg leading-relaxed">Adresse: Gravelines (GRA) - France</li>
+                            <li class="font-body-md text-body-md text-on-surface-variant text-lg leading-relaxed">Site web: <a href="https://www.ovh.com" target="_blank" rel="noopener noreferrer">ovh.com</a></li>
+
                         </ul>
                     </div>
                     <hr class="mb-6">

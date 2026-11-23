@@ -2,3 +2,5 @@ debian
 *.pub
 .htaccess
 robots.txt
+code/vendor/
+*.env
